@@ -2,25 +2,19 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import 'react-bulma-components/dist/react-bulma-components.min.css';
+import { Container, Button, Heading, Section } from 'react-bulma-components';
+
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.tsx</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Section>
+        <Container>
+          <Heading>Hello TRRAH</Heading>
+          <Heading subtitle>It's working</Heading>
+          <Button color="primary">My Bulma button</Button>
+        </Container>
+      </Section>
     );
   }
 }
