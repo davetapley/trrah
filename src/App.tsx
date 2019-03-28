@@ -8,7 +8,7 @@ import Number from './containers/Number';
 
 import { StoreState } from './types/index';
 
-class App extends Component{
+class App extends Component {
   render() {
     return (
       <Section>
