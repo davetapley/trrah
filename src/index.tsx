@@ -6,13 +6,17 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+
 import { reducer } from './reducers/index';
 
 const store = createStore(reducer);
 
 const Root = () => (
   <Provider store={store}>
-  <App />
+     <Router>
+        <Route path="/" exact component={App} />
+      </Router>
   </Provider>
 );
 
